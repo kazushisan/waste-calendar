@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "ff342b0e967d830158383432fe6ef9696476a4625aac2db29fff7d6a715f5adf"
+            "sha256": "f5fb91ed5bdccddccaf87f69ccab5f1659b7adb75223021d4442bb7b66030130"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -16,6 +16,12 @@
         ]
     },
     "default": {
+        "arrow": {
+            "hashes": [
+                "sha256:3d46d9ecd67765d1e7551e20aa54d1fe93c5fd77d3445aeec2bf8f048670d0b0"
+            ],
+            "version": "==0.4.2"
+        },
         "beautifulsoup4": {
             "hashes": [
                 "sha256:034740f6cb549b4e932ae1ab975581e6103ac8f942200a0e9759065984391858",
@@ -24,6 +30,28 @@
             ],
             "index": "pypi",
             "version": "==4.7.1"
+        },
+        "ics": {
+            "hashes": [
+                "sha256:5de36fd69983bb2d16a863c51ae1d02ccc3c1e407d39464d1360fac25697735e",
+                "sha256:8220f6cefd3f53231e8953acbe073313f28314fecbe77d3ffebc8ceef6ad837c"
+            ],
+            "index": "pypi",
+            "version": "==0.4"
+        },
+        "python-dateutil": {
+            "hashes": [
+                "sha256:7e6584c74aeed623791615e26efd690f29817a27c73085b78e4bad02493df2fb",
+                "sha256:c89805f6f4d64db21ed966fda138f8a5ed7a4fdbc1a8ee329ce1b74e3c74da9e"
+            ],
+            "version": "==2.8.0"
+        },
+        "six": {
+            "hashes": [
+                "sha256:3350809f0555b11f552448330d0b52d5f24c91a322ea4a15ef22629740f3761c",
+                "sha256:d16a0141ec1a18405cd4ce8b4613101da75da0e9a7aec5bdd4fa804d0e0eba73"
+            ],
+            "version": "==1.12.0"
         },
         "soupsieve": {
             "hashes": [
