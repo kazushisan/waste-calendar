@@ -35,7 +35,7 @@ while (True):
 		e.begin = (datetime(year, month, day, 8, 0), 'Asia/Tokyo')
 		e.end = e.begin
 		c.events.add(e)
-	if month == 4 and year == 2019:
+	if month == 3 and year == 2020:
 		break
 	if month == 12:
 		year += 1
