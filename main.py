@@ -16,7 +16,10 @@ end_year = 2021
 end_month = 3
 
 while (True):
-    url = f"https://www.53cal.jp/areacalendar?city=1080104&area=1080104102&yy={year}&mm={month}"
+    url = (
+        "https://www.53cal.jp/areacalendar?city=1080104"
+        f"&area=1080104102&yy={year}&mm={month}"
+    )
     html = urllib.request.urlopen(url)
     soup = BeautifulSoup(html, "html.parser")
     cells = soup.select('td')
