@@ -1,5 +1,3 @@
-# import os
-import arrow
 from datetime import datetime
 from bs4 import BeautifulSoup
 import urllib.request
@@ -10,9 +8,12 @@ regex = re.compile(r"^\/images\/([0-9]{1,2}).*\.png$")
 
 c = Calendar()
 
-year = 2019
+year = 2020
 month = 4
 day_before = 0
+
+end_year = 2021
+end_month = 3
 
 while (True):
     url = f"https://www.53cal.jp/areacalendar?city=1080104&area=1080104102&yy={year}&mm={month}"
@@ -35,7 +36,7 @@ while (True):
         e.begin = (datetime(year, month, day, 8, 0), 'Asia/Tokyo')
         e.end = e.begin
         c.events.add(e)
-    if month == 3 and year == 2020:
+    if month == end_month and year == end_year:
         break
     if month == 12:
         year += 1
